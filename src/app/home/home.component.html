@@ -1,0 +1,616 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<!-- <style>
+  :host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+  .toolbar {
+    height: 60px;
+    margin: -8px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo {
+    height: 40px;
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo:hover {
+    opacity: 0.8;
+  }
+
+  .content {
+    display: flex;
+    margin: 32px auto;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  svg.material-icons {
+    height: 24px;
+    width: auto;
+  }
+
+  svg.material-icons:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .card svg.material-icons path {
+    fill: #888;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .card {
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    height: 40px;
+    width: 200px;
+    margin: 0 8px 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+  }
+
+  .card-container .card:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .card.card-small {
+    height: 16px;
+    width: 168px;
+  }
+
+  .card-container .card:not(.highlight-card) {
+    cursor: pointer;
+  }
+
+  .card-container .card:not(.highlight-card):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(black, 0.35);
+  }
+
+  .card-container .card:not(.highlight-card):hover .material-icons path {
+    fill: rgb(105, 103, 103);
+  }
+
+  .card.highlight-card {
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+    border: none;
+    width: auto;
+    min-width: 30%;
+    position: relative;
+  }
+
+  .card.card.highlight-card span {
+    margin-left: 60px;
+  }
+
+  svg#rocket {
+    width: 80px;
+    position: absolute;
+    left: -10px;
+    top: -24px;
+  }
+
+  svg#rocket-smoke {
+    height: 100vh;
+    position: absolute;
+    top: 10px;
+    right: 180px;
+    z-index: -10;
+  }
+
+  a,
+  a:visited,
+  a:hover {
+    color: #1976d2;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #125699;
+  }
+
+  .terminal {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 6px;
+    padding-top: 45px;
+    margin-top: 8px;
+    overflow: hidden;
+    background-color: rgb(15, 15, 16);
+  }
+
+  .terminal::before {
+    content: "\2022 \2022 \2022";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: rgb(58, 58, 58);
+    color: #c2c3c4;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 0;
+    padding: 14px 0;
+    text-indent: 4px;
+  }
+
+  .terminal pre {
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+    color: white;
+    padding: 0 1rem 1rem;
+    margin: 0;
+  }
+
+  .circle-link {
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    margin: 8px;
+    background-color: white;
+    border: 1px solid #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: 1s ease-out;
+  }
+
+  .circle-link:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  footer {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+  }
+
+  footer a {
+    display: flex;
+    align-items: center;
+  }
+
+  .github-star-badge {
+    color: #24292e;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 3px 10px;
+    border: 1px solid rgba(27, 31, 35, .2);
+    border-radius: 3px;
+    background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+    margin-left: 4px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  }
+
+  .github-star-badge:hover {
+    background-image: linear-gradient(-180deg, #f0f3f6, #e6ebf1 90%);
+    border-color: rgba(27, 31, 35, .35);
+    background-position: -.5em;
+  }
+
+  .github-star-badge .material-icons {
+    height: 16px;
+    width: 16px;
+    margin-right: 4px;
+  }
+
+  svg#clouds {
+    position: fixed;
+    bottom: -160px;
+    left: -230px;
+    z-index: -10;
+    width: 1920px;
+  }
+
+
+  /* Responsive Styles */
+  @media screen and (max-width: 767px) {
+
+    .card-container>*:not(.circle-link),
+    .terminal {
+      width: 100%;
+    }
+
+    .card:not(.highlight-card) {
+      height: 16px;
+      margin: 8px 0;
+    }
+
+    .card.highlight-card span {
+      margin-left: 72px;
+    }
+
+    svg#rocket-smoke {
+      right: 120px;
+      transform: rotate(-5deg);
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    svg#rocket-smoke {
+      display: none;
+      visibility: hidden;
+    }
+  }
+</style> -->
+
+<!-- Toolbar -->
+<div class="" role="">
+
+    <!-- app navigation bar -->
+    <app-navbar></app-navbar>
+</div>
+
+<div class="" role="main">
+
+    <main class="">
+        <!-- main hero begining -->
+        <div role="main" class="container-hero main-hero  text-center">
+            <h1 class="main-hero-text">Kingdom Support Initiatives</h1>
+            <p class="spacer"></p>
+            <p class="mission-text">
+                ...servicing and supporting God’s bride for a generation that genuinely know God
+            </p>
+            <p class="caption-text">
+                <button class="btn btn-primary btn-sm " routerLink="/about">Read More...</button>
+            </p>
+
+
+            <div class="scroll-down">
+                <p class="icon-wp" [ngx-scroll-to]="'footer'">
+                    <svg viewBox="0 0 24 24" height="25" fill="#fff">
+                        <path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z" />
+                    </svg>
+                </p>
+            </div>
+        </div>
+        <!-- main here end -->
+
+        <!-- section one beginging -->
+        <section class="container-fluid section-two section-row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12 description-section">
+                        <h3>In His Foot Step</h3>
+                        <div class="spacer"></div>
+                        <p class="text-muted">
+                            We at KSI is a mandate to see that through 'In His Footstep’ people will experience a daily
+                            & continuous
+                            relationship with God. Through the word of God
+                            and the power of the Holy Spirit.
+                        </p>
+                        <div class="read-more">
+                            <button class="btn btn-primary btn-lg">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xs-12 img-section"> <img src="../assets/img/gmail.com"
+                            class="img-responsive img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section one end -->
+
+        <!-- section one beginging -->
+        <section class="container-fluid section-one section-row">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6 col-xs-12 swap-section img-section"> <img src="../assets/img/gmail.com"
+                            class="img-responsive img">
+                    </div>
+
+                    <div class="col-md-6 col-xs-12 swap-section  description-section">
+                        <h3>Inspire Impact</h3>
+                        <div class="spacer"></div>
+                        <p class="text-muted">
+                            We have an amazing set of a podcast to encourage and inspire God’s children to be bold and
+                            pursue whatever
+                            God is laying upon their hearts
+                        </p>
+                        <div class="read-more">
+                            <button class="btn btn-primary btn-lg">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section one end -->
+
+        <!-- section one beginging -->
+        <section class="container-fluid section-two section-row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12 description-section">
+                        <h3>Kingdom Life Summit</h3>
+                        <div class="spacer"></div>
+                        <p class="text-muted">
+                            <!-- Well, without prayers we are powerless in the face of our enemy. We believe that we pray to unstop until we've results -->
+                            Wondering how to refill your oil? well, we have an annual retreat for you to refresh,
+                            re-evaluate and
+                            re-strategize in God’s presence.
+                        </p>
+                        <div class="read-more">
+                            <button class="btn btn-primary btn-lg">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xs-12 img-section"> <img src="../assets/img/gmail.com"
+                            class="img-responsive img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section one end -->
+
+        <!-- section one beginging -->
+        <section class="container-fluid section-one section-row">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6 col-xs-12 description-section">
+                        <h3>Get Involved</h3>
+                        <div class="spacer"></div>
+                        <p class="text-muted">
+                            Well, if you are looking for a place that you can affect lives, KSI is one of them. if this
+                            sounds cool to
+                            you go ahead and fill the form and we will reach out to you ASAP.
+                        </p>
+                        <div class="read-more">
+                            <button class="btn btn-primary btn-lg">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xs-12">
+                        <form class="get-involved" [formGroup]="frm">
+                            <div class="">
+                                <h5 class="text-center">Fill the below if you want to be part of us</h5>
+                                <div class="spacer"></div>
+                                <div class="row">
+
+                                    <div class="col-sm margin-left col-xs-12">
+                                        <div class="response text-center">{{errorResult || successResult}}</div>
+                                        <!-- <div class="col-sm"> -->
+                                        <div class="form-group">
+                                            <label for="fullname">Full Name</label>
+                                            <input type="text" autocomplete="name" formControlName="fullName"
+                                                class="form-control" id="fullname" aria-describedby="nameHelp"
+                                                placeholder="Nazeh Abel">
+                                        </div>
+                                        <div class="input-errors" *ngIf="
+                      (frm.get('fullName').invalid &&
+                        frm.get('fullName').touched) ||
+                      showInputErrors
+                    ">
+                                            <div *ngIf="frm.get('fullName').hasError('required')">
+                                                Please enter your full Name!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="spacer"></div>
+                                <div class="row">
+                                    <!-- email field -->
+                                    <div class="col-sm col-xs-12 margin-left margin-right">
+                                        <div class="form-group">
+                                            <label for="email--getinv">Email Address</label>
+                                            <input type="email" autocomplete="email" formControlName="email"
+                                                class="form-control" id="email--getinv" aria-describedby="emailHelp"
+                                                placeholder="Nazehabel@domain.com">
+                                        </div>
+                                        <!-- throw this error if not valid -->
+                                        <div class="input-errors" *ngIf="
+                        (frm.get('email').invalid &&
+                          frm.get('email').touched) ||
+                        showInputErrors
+                      ">
+                                            <div *ngIf="frm.get('email').hasError('required')">
+                                                Please enter your email address!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- mobile field -->
+                                    <div class="col-sm margin-right col-xs-12">
+                                        <div class="form-group">
+                                            <label for="mobile">Phone/Mobile Number</label>
+                                            <input type="mobile" autocomplete="mobile" formControlName="mobile"
+                                                class="form-control" id="mobile" aria-describedby="mobileHelp"
+                                                placeholder="+234812345678">
+                                        </div>
+                                           <!-- throw this error if not valid or empty -->
+                                    <div class="input-errors" *ngIf="
+                                    (frm.get('mobile').invalid &&
+                                      frm.get('mobile').touched) ||
+                                    showInputErrors
+                                  ">
+                                       <div *ngIf="frm.get('mobile').hasError('required')">
+                                           Please enter your mobile number!
+                                       </div>
+                                   </div>
+                                    </div>
+                                 
+                                </div>
+                                <!-- </div> -->
+                                <div class="spacer"></div>
+                            </div>
+                            <div class="spacer"></div>
+                            <div class="row">
+                                <div class="col-sm margin-left getinvolved-btn margin-right">
+                                    <div class="form-group">
+                                        <button type="submit" (click)="getInvolved()" class="btn btn-block btn-primary"
+                                            [disabled]="isbusy">
+                                            <ng-template [ngIf]="!isbusy">Submit</ng-template>
+                                            <ng-template [ngIf]="isbusy">Processing Request, please wait...</ng-template>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section one end -->
+
+
+        <!-- section two beginging -->
+        <section class="container-fluid section-subscription section-row">
+            <div class="container subscription">
+                <div class="row">
+
+                    <div class="col-md-12 text-center col-xs-12 description-section">
+
+                        <h3>Grow Your Relationship &amp; Walk With God With Our Daily Devotion</h3>
+
+                        <div class="spacer"></div>
+
+                        <p>Subscribe to our Daily Devotional, 'In His Footstep'</p>
+
+                        <div class="spacer"></div>
+                        <form class="form-subscription col-md-6 col-xs-12" [formGroup]="subForm">
+                                <div class="response text-center">{{successResult || errorResult}}</div>
+                            <div class="form-group mx-sm-3 mb-2">
+                                <div class="form-group">
+                                        <input type="email" autocomplete="email" class="form-control form-control-lg" formControlName="emailsub"
+                                        placeholder="Nazehabel@domain.com">
+                                </div>           
+                                 <!-- throw this error if not valid or empty -->
+                                 <div class="input-errors" *ngIf="
+                                 (subForm.get('emailsub').invalid &&
+                                   subForm.get('emailsub').touched) ||
+                                 showInputError
+                               ">
+                                    <div style="color:#ffae42" *ngIf="subForm.get('emailsub').hasError('required')">
+                                        Please enter your email address to subscribe!
+                                    </div>
+                                </div>                    
+                            </div>
+                            <div class="spacer"></div>
+                                    <div class="form-group">
+                                            <button type="submit" (click)="devotionSubscription()" class="btn subscribe btn-primary btn-lg mb-2"
+                                                [disabled]="isbusySub">
+                                                <ng-template [ngIf]="!isbusySub">SUBSCRIBE</ng-template>
+                                                <ng-template [ngIf]="isbusySub">Processing Request, please wait...</ng-template>
+                                            </button>
+                                        </div>
+                                
+                        </form>
+                    </div>
+
+                    <!-- <div class="col-md-6 col-xs-12 img-section">Section two half</div> -->
+                </div>
+            </div>
+        </section>
+        <!-- section two end -->
+
+
+        <!-- section footer beginging -->
+        <section class="container-fluid section-footer section-row">
+            <div class="row">
+
+                <div class="col-md-12 col-xs-12 description-section">
+                    <div class="h-c-grid__col h-c-grid__col--12 h-c-grid__col--align-middle">
+                        <div class="copy-content">
+                            <h2 class="h-c-headline h-c-headline--two">Experience our daily devotion on any device</h2>
+
+                            <div class="content__text">
+                                <p class="h-c-copy">The ease &amp; simplicity of KSI, wherever you are.</p>
+                            </div>
+
+                        </div>
+
+                        <ul class="badges__list">
+                            <li class="badges__item">
+                                <a href="#" target="_blank" rel="noopener" ga-on="click"
+                                    ga-event-category="ab experiment" ga-event-action="mobile app"
+                                    ga-event-label="play store">
+
+                                    <img class="badges__badge badges__badge--play"
+                                        src="https://lh3.googleusercontent.com/6kdr7g-ziKhTh0iWIXncqJh6Zd8Z-dkntyVV10lni6ZyBC8Q7uzQeY4Xv7EIAH6b0EQkUD6cUrHC8-GCLma-ZJrdNp16cciXoP_N"
+                                        alt="Google Play" aria-label="Google Play">
+
+                                </a>
+                            </li>
+                            <li class="badges__item">
+                                <a href="" target="_blank" rel="noopener" ga-on="click"
+                                    ga-event-category="ab experiment" ga-event-action="mobile app"
+                                    ga-event-label="app store">
+
+                                    <img class="badges__badge badges__badge--app"
+                                        src="https://lh3.googleusercontent.com/OBvpNtOKZRZjGFYGsmUrME8yMIjkk1BNQX89gt_lMN2afWCZDvE4SdZhPGXI72vDo-wWqML-8NDy2vU2zY2c6oOktAXZbcwU9ByMBw"
+                                        alt="App Store" aria-label="App Store">
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section footer end -->
+        <app-footer></app-footer>
+    </main>
+
+</div>

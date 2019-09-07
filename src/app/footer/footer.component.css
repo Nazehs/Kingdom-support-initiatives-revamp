@@ -1,0 +1,239 @@
+footer .container-fluid{
+    bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 15px;
+     padding-left: 15px;
+     position: absolute;
+}
+
+.spacer{
+    height: 25px;
+}
+
+
+.section-row{
+    height: 46%;
+    padding: 5% 10%;
+}
+.section-one{
+    background: #fff;
+}
+.img-section img{
+    height: 100%!important;
+    width: 100%;
+}
+.container-fluid{
+    /* padding-right:0;
+    padding-bottom: 0; */
+}
+.read-more button{
+    min-width: 220px;
+    font-size: 16px;
+    letter-spacing: .5px;
+    line-height: .9;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    font-family: "Google Sans",Roboto,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 46px;
+    line-height: 1;
+    letter-spacing: .75px;
+    margin: 8px 0;
+    padding: 15px 24px;
+    transition: color .15s linear,background-color .15s linear;
+    vertical-align: middle;
+    padding: 17px 24px;
+}
+.read-more{
+    margin: 45px auto;
+    width: 70%;
+}
+.section-two{
+    background:#F5F5F5;
+}
+
+.section-three{
+    background: #fff;
+}
+.section-footer{
+    background: #fff;
+}
+
+.description-section h3{
+  text-transform: uppercase;
+  font-weight: 400;
+  /* color:#6c757d!important */
+}
+
+
+ 
+ol, ul {
+    margin-left: 20px;
+}
+dl, ol, ul {
+    list-style-position: outside;
+    margin-bottom: 20px;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+/* @media screen and (min-width: 800px){ */
+ .badges__item {
+    margin-bottom: 0;
+    margin-right: 8px;
+    display: inline-block;
+
+}
+.badges__badge--play, .badges__badge--app{
+    height: 100%;
+    width: 100%;
+}
+ .badges__item {
+    display: inline-block;  
+    list-style: none;
+    margin-bottom: 16px;
+    width: 20%;
+    margin-right: 3%;
+}
+blockquote, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, li, ol, p, pre, td, th, ul {
+    margin: 0;
+    padding: 0;
+}
+.section--experience .badges__item {
+    display: inline-block;
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+/* } */
+
+@media screen and (min-width: 1024px){
+    dd, dt, li {
+        line-height: 1.625;
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+.h-c-headline.h-c-headline--two {
+    font-size: 44px;
+}
+
+.h-c-headline.h-c-headline--two {
+    font-size: 34px;
+}
+.h-c-copy, p {
+    line-height: 1.625;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+.h-c-headline.h-c-headline--two {
+    line-height: 1.18182;
+    font-size: 44px;
+    letter-spacing: -.5px;
+}
+}
+@media (max-width: 600px){
+    .main-hero-text{
+        /* font-size: 25px; */
+        line-height:45px!important;
+        margin-top: 14px!important;
+    }
+.h-c-headline.h-c-headline--two {
+    line-height: 1.25;
+    font-size: 32px;
+    letter-spacing: 0;
+}
+dd, dt, li {
+    line-height: 1.71429;
+    font-size: 14px;
+    letter-spacing: .25px;
+}
+form .margin-left, .get-involved .margin-right{
+    /* margin: 0!important; */
+    margin-left:0!important;
+    margin-right: 0!important;
+    /* background: red; */
+}
+form .getinvolved-btn{
+    margin-top: 10px!important;
+    margin-bottom: 30px!important;
+}
+
+form  .margin-right:last-child{
+    margin-top:20px!important;
+}
+.swap-section.description-section{
+    transform: translateY(-230px);
+}
+.swap-section.img-section{
+    transform: translateY(317px);
+}
+.badges__item{
+    width: 48%;
+    }
+}
+
+
+/* footer style */
+.footer{
+    /* height: 112px; */
+    /* background: red; */
+    /* padding: 40px 32px 20px; */
+}
+
+.footer ul li{
+    display: inline-block;
+    text-align: center;
+}
+.footer{
+    display: block;
+}
+
+.footer .nav-item{
+    /* background-color: rgb(255, 255, 255); */
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 15px;
+    display: inline-block;
+    margin-right: 21px;
+    float: none;
+}
+.footer .wp-nav{
+    text-align: center;
+    width: 100%;
+}
+.text-center{
+    text-align: center!important;
+}
+.footer .nav {
+    display: block;
+}
+.footer-icons-section svg{
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  fill: #00bcd4;
+  
+}
+
+.footer-icons-section {
+    line-height: 30px;
+    vertical-align: middle!important;
+    padding-top:14px;
+    text-align: justify-all;
+    text-transform: uppercase;
+}
+
+.navbar-brand img{
+    height: 100%;
+    width: 100%;
+  }
+  .navbar-brand{
+      width: 55px;
+      /* height: 100%; */
+  }
