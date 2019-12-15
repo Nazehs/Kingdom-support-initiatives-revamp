@@ -48,7 +48,9 @@ font-size: 17px;
 .row{
   margin: 0;
 }
-
+.sub-breadcumb .breadcrumb {
+    padding-top: 0;
+}
 /* ng styles */
 .ng-valid[required], .ng-valid.required  {
   border-left: 5px solid #42A948; /* green */

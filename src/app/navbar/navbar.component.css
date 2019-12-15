@@ -56,5 +56,12 @@ outline: none!important;
     .navbar-brand{
         width: 55px;
     }
+    .nav-item{
+        margin: 0;
+    }
 
+}
+
+dl, ol, ul {
+    margin-top: -22px;
 }

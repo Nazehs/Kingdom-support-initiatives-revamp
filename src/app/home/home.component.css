@@ -30,7 +30,7 @@ font-size: 20px;
     /* color:red; */
 }
 .main-hero{
-    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.22), rgba(117, 19, 93, 0.43)), url('../../assets/img/woman-with-seedling.jpg');
+    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.28), rgba(0, 0, 0, 0.1)), url('../../assets/img/KSI_ICON_4.svg');
     height: 550px;
     /* width: 100%; */
     background-position: center;
@@ -40,14 +40,15 @@ font-size: 20px;
     bottom: 0;
     top: 0;
     margin-top: 80px!important;
-    object-fit: cover;
+    object-fit: contain;
     image-orientation: from-image;
     margin-top: -8px;
     margin-left: 0;
     margin-right: 0;
     padding-right: 15px;
-    color: aliceblue;
+    color: rgba(0,0,0,.5);
      padding-left: 15px;
+     background-size: 100% 100%;
 }
 .spacer{
     height: 25px;
@@ -294,7 +295,7 @@ form  .margin-right:last-child{
     margin-top:20px!important;
 }
 .swap-section.description-section{
-    transform: translateY(-230px);
+    transform: translateY(-323px);
 }
 .swap-section.img-section{
     transform: translateY(317px);
@@ -447,7 +448,7 @@ opacity:0;
 
 .get-involved input{
     margin-right: 10px;
-    height: 30px;float: left;
+    height: 50px;float: left;
     /* width: calc(100vw)/5 */
 
 }
